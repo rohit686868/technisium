@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="schedule">
+    
+        <div class="containerr">
+            <div class="timeline">
+             
+              <ul>
+                
+                <li>
+                    
+                  <div class="timeline-content">
+                    <h1>Robo Race</h1>
+                    <h2 class="date">4th June, 2022</h2>
+                    <p>The motive is to design a wired/ wireless robot being autonomous or manually controlled machine that is capable of completing the race successfully in minimum time.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h1>Techno Quiz</h1>
+                    <h2 class="date">4th June, 2022</h2>
+                    <p>Mind-boggling problems from a wide range of topics will be included. Put on your thinking caps and indulge yourself in these questions.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h1>Hardware Debugging</h1>
+                    <h2 class="date">4th June, 2022</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci voluptatum deleniti nisi sequi quaerat.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h1>Techno Management</h1>
+                    <h2 class="date">4th June, 2022</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci voluptatum deleniti nisi sequi quaerat.</p>
+                  </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                      <h1>ϕ-null</h1>
+                      <h2 class="date">4th June, 2022</h2>
+                      <p>Technical and fun games. Showcase your knowledge by answering the questions that you come across in this event.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                     
+                      <h1>Paper Presentation</h1>
+                      <h2 class="date">4th June, 2022</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci voluptatum deleniti nisi sequi quaerat.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                     
+                      <h1>Hobby Project</h1>
+                      <h2 class="date">4th June, 2022</h2>
+                      <p>Come with any Hardware or Software based Inventions and win the big bucks for it</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                    
+                      <h1>Robotics</h1>
+                      <h2 class="date">4th June, 2022</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci voluptatum deleniti nisi sequi quaerat.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h1>Line Follower</h1>
+                      <h2 class="date">4th June, 2022</h2>
+                      <p>An autonomous Robot traverses the given path with thrilling speed and meticulous precision.</p>
+                    </div>
+                  </li>
+                  
+              </ul>
+            </div>
+          </div>
+    </section>
+
+    <style>
+        /*Timeline Start */
+
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerr {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  background-color:#FAF9F6;
+
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color:#F9F6EE;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+        /*TimeLine End */
+    </style>
+
+</body>
+</html>
